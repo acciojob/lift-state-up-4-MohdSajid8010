@@ -24,16 +24,16 @@ const App = () => {
 
       <div className="child">
         <h1>Child Component</h1>
-        <ul className="child">
+        <ul>
           {
             cartItems.map((obj, i) => {
               return (
-                <li key={i} className="child">
+                <li key={i} className="child li">
                   {obj.name} - ${obj.price}<button onClick={()=>removeItem(i)}>Remove</button>
                 </li>
               )
             })
-            
+
           }
         </ul>
       </div>
